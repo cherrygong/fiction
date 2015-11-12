@@ -1,6 +1,9 @@
 class AuthorsController < ApplicationController
 
+  # hahahahaha
+
   def index
+    book_path
     book = Book.find(params[:book_id])
     @authors = book.authors
   end
